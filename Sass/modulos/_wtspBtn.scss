@@ -1,0 +1,31 @@
+.wtspBtn{
+    background-color: $Whatsapp;
+    border: solid 2px black;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    position: fixed;
+    left: 2.5rem;
+    bottom: 2.7rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+    //Sombras
+    -webkit-box-shadow: 1px 28px 14px -25px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 28px 14px -25px rgba(0,0,0,0.75);
+    box-shadow: 1px 28px 14px -25px rgba(0,0,0,0.75);
+    i{
+        display: block;
+        color: $Blanco;
+        font-size: 4rem;
+    }
+}
+.wtspBtn:hover{
+    background-color: #128C7E;
+    transition: 0.7s;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 3.1rem;
+}

@@ -1,0 +1,41 @@
+.estudios{
+    margin-top: 3rem;
+    &__header{
+        display: flex;
+        align-items: flex-end;
+        &__titulo{
+            background-color: rgb(214, 0, 0);;
+            color: white;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+
+        }
+        hr{
+            background-color: rgb(214, 0, 0);;
+            width: auto;
+            height: .2rem;
+            width: calc(100% - 194.97px);
+            border: none;
+            margin-bottom: 1.2rem;
+        }
+    }
+    &__body{
+        padding: 2rem;
+        font-size: 1.6rem;
+        &__tit{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__especificaciones{
+            &--carrera{
+                margin: 2rem 0;
+            }
+            &--otros{
+                font-size: 1.6rem;
+                margin: 1rem 0;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}

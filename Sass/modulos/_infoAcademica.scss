@@ -1,0 +1,31 @@
+.infoAcademica{
+    margin-top: 3rem;
+    &__header{
+        display: flex;
+        align-items: flex-end;
+        &__titulo{
+            background-color: rgb(214, 0, 0);;
+            color: white;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+
+        }
+        hr{
+            background-color: rgb(214, 0, 0);;
+            width: auto;
+            height: .2rem;
+            width: calc(100% - 232.69px);
+            border: none;
+            margin-bottom: 1.2rem;
+        }
+    }
+    &__body{
+        padding: 2rem;
+        font-size: 1.6rem;
+        ul{
+            li{
+                margin: .6rem 0;
+            }
+        }
+    }
+}

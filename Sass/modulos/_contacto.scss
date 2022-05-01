@@ -1,0 +1,64 @@
+.contacto{
+    h1{
+        margin: auto 5px;
+        margin-top: 6rem;
+        text-align: center;
+        font-size: 2.7rem;
+        font-family: $font-Roboto;
+    }
+    &__form{
+        margin: 3rem 5rem;
+        &__cont{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            label{
+                font-family: $font-RobotoMono;
+                font-size: 2rem;
+                margin-bottom: .5rem;
+            }
+            
+            input{
+                height: 3rem;
+                border: 2px solid $oscuro;
+                border-radius: .5rem;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            textarea#texto{
+
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 8rem;
+                border: 2px solid $oscuro;
+                border-radius: .5rem;
+            }
+            @media only screen and (max-width: 521px){
+                label{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        &__submit{
+            margin-top: 2rem;
+            width: 12.8rem;
+            height: 3.8rem;
+            background-color: $oscuro;
+            color: $Blanco;
+            font-family: $font-RobotoMono;
+            font-size: 1.8rem;
+            border: none;
+            border-radius: .5rem;
+            transition: 0.7s;
+
+        }
+        &__submit:hover{
+            background-color: white;
+            border: solid 4px $oscuro;
+            font-size: 1.9rem;
+            color: $oscuro;
+            transition: 0.7s;
+        }
+        
+    }
+}

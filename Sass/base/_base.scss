@@ -1,0 +1,31 @@
+// Breack points
+// 992px / 16 = 62em
+// 768px / 16 = 48em
+// 576px / 16 = 36em
+$bp-large: 62em;
+$bp-medium: 48em;
+$bp-small: 36em;
+$bp-phone: 554px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    // 16px por defecto de tamaño de fuente
+    // se usarán los rem
+    // 1rem -> tamaño de fuente desde el root
+    font-size: 62.5%; // Para trabajar con 10 px
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+a, 
+a:link,
+a:visited{
+   text-decoration: none ;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}

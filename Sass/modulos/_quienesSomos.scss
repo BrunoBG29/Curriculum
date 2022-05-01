@@ -1,0 +1,52 @@
+.quienesSomos{
+    h1{
+        text-align: center;
+        font-size: 2.7rem;
+        font-family: $font-Roboto;
+        margin: auto 5px;
+    }
+    &__cont{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__col1{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 4rem;
+            width: 50%;
+            p{
+                font-size: 2rem;
+                text-align: justify;
+                line-height: 2.5rem;
+            }
+        }
+        &__col2{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            img{
+                display: block;
+                width: 70%;
+            }
+        }
+    }
+    // Diseño Responsivo
+    @media only screen and (max-width: $bp-phone){
+        &__cont{
+            flex-direction: column;
+                &__col1{
+                    width: 100%;
+                    padding: 1rem 3rem;
+                }
+                p{
+                    margin-top: 3rem;
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                }
+            }
+            &__col2{
+                width: 100%;
+            }
+        }
+    }

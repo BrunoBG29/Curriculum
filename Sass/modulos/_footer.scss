@@ -1,0 +1,56 @@
+.footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: $oscuro3;
+    &__cont{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        &__red{
+            margin: 20px 8px;
+            a{
+                i{
+                    color: $Blanco;
+                    font-size: 2.2rem;
+                }
+                i:hover{
+                    color: rgb(211, 211, 211);
+                }
+            }
+        }
+    }
+    &__info{
+        text-align: center;
+        font-size: 1.6rem;
+        color: $Blanco;
+        padding-bottom: 18px;
+        p{
+            padding-top: 5px;
+
+        }
+    }
+    //Diseño responsivo
+    @media only screen and ( max-width: 730px ){
+        &__info{
+            font-size: 1.3rem;
+        }
+    }
+    @media only screen and ( max-width: 497px ){
+        &__info{
+            padding-bottom: 7rem;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                max-width: 25rem;
+            }
+        }
+    }
+    @media only screen and ( max-width: 350px ){
+        &__info{
+            padding-bottom: 9rem;
+        }
+    }
+}
